@@ -3,19 +3,148 @@
     --cinza__secundario: #C0C0C0;
     --botao__azul: #167BF7;
     --cor__de__fundo: #00030C;
+    --fonte__principal: 'Inter';
 }
 
 body{
     background-color: var(--cor__de__fundo);
     color: var(--branco__principal);
+    font-family: var(--fonte__principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .principal{
     background-image: url("../img/background.png");
     background-size: contain;
     background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
 }
+
+
 
 .container{
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao__azul);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--branco__principal);
+    text-decoration: none;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.botao--secundario{
+    background-color: transparent;
+    border: 1px solid var(--branco__principal);
+}
+
+.container__aviso{
+    color: var(--cinza__secundario);
+    font-size: 12px;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco__principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza__secundario);
+}
+
+.segundo__botao{
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1rem;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco__principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: .5em;
+    color: var(--branco__principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 6em;
+    
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.75em;
+}
+
+.lista__link{
+    font-size: 16px;
+    color: var(--branco__principal);
+    text-decoration: none;
+}
+
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cinza__secundario);
+    margin-top: 1.75em;
+}
+
+.lista__link:hover{
+    color: var(--botao__azul);
+}
+
+.lista__link:active{
+    color: purple;
 }
